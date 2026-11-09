@@ -1,0 +1,15 @@
+**/node_modules/
+**/bin/
+**/obj/
+**/artifacts/
+**/dist/
+**/.vs/
+**/.env*
+!**/.env.example
+**/appsettings.*.json
+!**/appsettings.example.json
+**/*.bak
+**/*.pfx
+**/*.key
+**/*.tsbuildinfo
+**/uploads/

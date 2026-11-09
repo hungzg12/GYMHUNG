@@ -1,0 +1,120 @@
+.marketing-site {
+  --blue: var(--primary);
+  --blue-dark: var(--primary);
+  --navy: var(--sidebar);
+  --ink: var(--foreground);
+  --muted: var(--muted-foreground);
+  --line: var(--border);
+  --soft: var(--card);
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-be-vietnam-pro), 'Segoe UI', Arial, sans-serif;
+}
+.marketing-site .site-header { background: var(--sidebar); border-color: var(--border); }
+.marketing-site .brand-name,.marketing-site .main-nav a,.marketing-site .language,
+.marketing-site h1,.marketing-site h2,.marketing-site h3,
+.marketing-site .hero-proof b { color: var(--foreground); }
+.marketing-site .hero-copy>p,.marketing-site .section-heading p,
+.marketing-site .hero-proof,.marketing-site .branch-layout p,
+.marketing-site .story-body small { color: var(--muted-foreground); }
+.marketing-site .plans-section,.marketing-site .branches-section,
+.marketing-site .management-section,.marketing-site .join-section { background: var(--background); }
+.marketing-site .experience-section,.marketing-site .stories-section { background: var(--card); }
+.marketing-site .plan-card,.marketing-site .branch-item,.marketing-site .story-card,
+.marketing-site .metric-card,.marketing-site .chat-widget { background: var(--card); color: var(--foreground); border: 1px solid var(--border); box-shadow: none; border-radius: 6px; }
+.marketing-site .plan-card h3,.marketing-site .plan-card .price,
+.marketing-site .plan-card .price strong,.marketing-site .plan-card ul,
+.marketing-site .branch-item b,.marketing-site .story-body h3,
+.marketing-site .metric-card>strong { color: var(--foreground); }
+.marketing-site .plan-card p,.marketing-site .plan-card li,
+.marketing-site .branch-item small,.marketing-site .chat-widget p { color: var(--muted-foreground); }
+.marketing-site .plan-orange { border-color: var(--primary); background: var(--secondary); }
+.marketing-site .plan-cyan { background: var(--card); }
+.marketing-site .button { border-radius: 6px; transform: none; }
+.marketing-site .button:hover { transform: none; }
+.marketing-site .button-blue,.marketing-site .button-orange { background: var(--primary); color: var(--primary-foreground); }
+.marketing-site .button-blue:hover,.marketing-site .button-orange:hover { background: var(--primary); filter: brightness(1.12); }
+.marketing-site .button-outline,.marketing-site .button-white,.marketing-site .button-login { background: var(--secondary); color: var(--foreground); border: 1px solid var(--border); }
+.marketing-site .feature-row { border-color: var(--border); color: var(--foreground); }
+.marketing-site .join-inner input,.marketing-site .branch-search input { background: var(--background); color: var(--foreground); border-color: var(--border); }
+.marketing-site .branch-search { background: var(--card); border-color: var(--border); }
+.marketing-site .footer { background: var(--sidebar); color: var(--foreground); }
+.marketing-site .footer-top,.marketing-site .footer-columns { border-color: var(--border); }
+.marketing-site .footer-columns a,.marketing-site .footer-columns p,.marketing-site .footer-bottom { color: var(--muted-foreground); }
+.marketing-site .main-nav a:hover,.marketing-site .text-link { color: var(--primary); }
+.marketing-site .hero:before { display: none; }
+.marketing-site .footer .brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  width: 170px;
+  flex: 0 0 auto;
+}
+.marketing-site .footer .brand-name {
+  display: block;
+  white-space: nowrap;
+  width: auto;
+  color: var(--primary);
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0;
+}
+.marketing-site .footer .brand-name span { display: inline; color: inherit; }
+.marketing-site .footer .brand small { color: var(--muted-foreground); font-size: 9px; }
+.marketing-site .footer .brand-the { color: var(--primary); background: transparent; }
+.marketing-site .language-select {
+  min-height: 40px;
+  width: 126px;
+  max-width: 126px;
+  padding: 8px 12px;
+  border: 1px solid color-mix(in srgb, var(--primary) 22%, var(--border));
+  border-radius: 999px;
+  background: var(--secondary);
+  color: var(--foreground);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+.marketing-site .language-select:hover { border-color: var(--primary); box-shadow: 0 2px 8px #0000000a; }
+.marketing-site .nav-actions .button {
+  border-radius: 999px;
+  min-height: 40px;
+  padding: 11px 20px;
+  transition: background-color 160ms ease, box-shadow 160ms ease;
+}
+.marketing-site .nav-actions .button:hover { box-shadow: 0 3px 10px #00000012; }
+@media(max-width:640px) { .marketing-site .language-select { width:106px; max-width:106px; padding:7px 9px; font-size:11px; } }
+.marketing-site .language-select:focus-visible { outline:2px solid var(--primary); outline-offset:2px; }
+.marketing-site .ticker {
+  height: 42px;
+  width: 100%;
+  overflow: hidden;
+  background: var(--primary, #009b78);
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.marketing-site .ticker-track {
+  display: flex;
+  flex: none;
+  width: max-content;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  font-style: italic;
+  animation: gymhung-ticker 28s linear infinite;
+  will-change: transform;
+}
+.marketing-site .ticker-track span { flex: none; color: inherit; }
+.marketing-site .ticker:hover .ticker-track { animation-play-state: paused; }
+@keyframes gymhung-ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .marketing-site .ticker-track { animation: none; } }
+.marketing-site .hero-art { background: var(--card); }
+.marketing-site .hero-art>img { mix-blend-mode:normal; object-position:center; }
+.marketing-site .story-image img { width:100%;height:100%;object-fit:cover;object-position:center;transform:none; }
+.marketing-site .experience-image>img { object-fit:cover;object-position:center; }
+@media(max-width:1100px) { .marketing-site .main-nav { background: var(--sidebar); border-color: var(--border); } }
